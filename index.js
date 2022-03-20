@@ -1,4 +1,4 @@
-const config = require('./config.json');
+ const config = require('./config.json');
 
 const Database = require('easy-json-database');
 const db = new Database('./db.json');
@@ -227,4 +227,4 @@ client.on('interactionCreate', (interaction) => {
     }
 });
 
-client.login(config.token);
+client.login(process.env.TOKEN);
